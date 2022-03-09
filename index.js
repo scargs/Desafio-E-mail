@@ -27,8 +27,8 @@ function primeiraLetraNomesMeio(value) {
     let primeiraLetraNome = "";
     if (value.length > 0) {
         for (const meio of value) {
-            primeiraLetraNome =
-            primeiraLetraNome !== " " 
+            primeiraLetraNome = ""
+            primeiraLetraNome !== "" 
             ? `.${meio.substring(0, 1)}`
             : `.${meio.substring(0, 1)}`;
         }
