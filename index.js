@@ -8,6 +8,7 @@ const users = ["Samanta Coitinho Anchieta",
 
 const userslistArr = []
 
+
 function retornaSobrenome(value) {
     return value[value.length - 1].replace('-', '');
 
@@ -27,8 +28,7 @@ function primeiraLetraNomesMeio(value) {
     let primeiraLetraNome = "";
     if (value.length > 0) {
         for (const meio of value) {
-            primeiraLetraNome = ""
-            primeiraLetraNome !== "" 
+            primeiraLetraNome !== " " 
             ? `.${meio.substring(0, 1)}`
             : `.${meio.substring(0, 1)}`;
         }
@@ -51,7 +51,7 @@ const arrayNomesMeio = retornaNomesMeio(arrStringUser);
 // primeira letra nome meio //
 const primeiraLetraNome = primeiraLetraNomesMeio(arrayNomesMeio);
 
-let usuario = `${sobrenome}.${primeiraLetraPrimeiroNome}${primeiraLetraNome}`.toLowerCase();
+let usuario = `${sobrenome}.${primeiraLetraPrimeiroNome}${primeiraLetraNome}`.toLowerCase()
 
 // adicionando numero sequencial para e-mail repetido //
 
