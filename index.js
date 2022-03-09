@@ -39,15 +39,15 @@ function primeiraLetraNomesMeio(value) {
 for (const user of users) {
     const arrStringUser = user.split(" ");
 
-//sobrenome//
+// sobrenome //
 const sobrenome = retornaSobrenome(arrStringUser);
 
-//primeira letra do primeiro nome//
+// primeira letra do primeiro nome //
 const primeiraLetraPrimeiroNome = retornaPrimeiraLetraPrimeiroNome(arrStringUser);
 
 const arrayNomesMeio = retornaNomesMeio(arrStringUser);
 
-//primeira letra nome meio//
+// primeira letra nome meio //
 const primeiraLetraNome = primeiraLetraNomesMeio(arrayNomesMeio);
 
 let usuario = `${sobrenome}.${primeiraLetraPrimeiroNome}${primeiraLetraNome}`.toLowerCase();
