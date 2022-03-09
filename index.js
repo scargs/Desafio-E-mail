@@ -2,6 +2,7 @@ const users = ["Samanta Coitinho Anchieta",
 "Maiara Oliveira Santana",
 "Daniel Vitor Fim Moreto",
 "Simone Medianeira Coitinho",
+"Simone Moraes Carneiro",
 "André Gervasio Anchieta",
 "Marjorie Dosseto Mont-alverne"];
 
