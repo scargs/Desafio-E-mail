@@ -52,7 +52,7 @@ const primeiraLetraNome = primeiraLetraNomesMeio(arrayNomesMeio);
 
 let usuario = `${sobrenome}.${primeiraLetraPrimeiroNome}${primeiraLetraNome}`.toLowerCase();
 
-// adicionando um numero sequencial para e-mail repetido //
+// adicionando numero sequencial para e-mail repetido //
 
 let numero = 1;
 while (userslistArr.includes(usuario)) {
