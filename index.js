@@ -1,5 +1,6 @@
 const users = ["Samanta Coitinho Anchieta",
-"Maiara Oliveira Santana",
+"Maiara Oliveira",
+"Maria Oliveira",
 "Daniel Vitor Fim Moreto",
 "Simone Medianeira Coitinho",
 "Simone Moraes Carneiro",
@@ -58,7 +59,7 @@ let usuario = `${sobrenome}.${primeiraLetraPrimeiroNome}${primeiraLetraNome}`.to
 let numero = 1;
 while (userslistArr.includes(usuario)) {
     usuario = usuario.replace(numero, "");
-    numero = numero + 1;
+    numero = numero;
     usuario = `${usuario}${numero}`;
     }
     userslistArr.push(usuario);
