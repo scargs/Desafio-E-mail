@@ -1,10 +1,12 @@
-const users = ["Samanta Coitinho Anchieta",
+const users = [
+"Samanta Coitinho Anchieta",
 "Maiara Oliveira",
 "Maria Oliveira",
 "Daniel Vitor Fim Moreto",
 "Simone Medianeira",
 "Andre Anchieta",
-"Marjorie Mont-alverne"];
+"Marjorie Mont-alverne"
+];
 
 const userslistArr = []
 
