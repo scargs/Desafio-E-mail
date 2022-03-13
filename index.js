@@ -3,8 +3,7 @@ const users = ["Samanta Coitinho Anchieta",
 "Maria Oliveira",
 "Daniel Vitor Fim Moreto",
 "Simone Medianeira",
-"Simone Moraes Carneiro",
-"André Anchieta",
+"Andre Anchieta",
 "Marjorie Mont-alverne"];
 
 const userslistArr = []
@@ -15,7 +14,7 @@ function retornaSobrenome(value) {
 }
 
 function retornaPrimeiraLetraPrimeiroNome(value) {
-    return value[0].substr(0, 1);
+    return value[0].substring(0, 1);
 }
 
 function retornaNomesMeio(value) {
@@ -28,9 +27,9 @@ function primeiraLetraNomesMeio(value) {
     let primeiraLetraNome = "";
     if (value.length > 0) {
         for (const meio of value) {
-            primeiraLetraNome =
+            primeiraLetraNome = 
             primeiraLetraNome !== " " 
-            ? `.${meio.substring(0, 1)}`
+            ? `${primeiraLetraNome}.${meio.substring(0, 1)}`
             : `.${meio.substring(0, 1)}`;
         }
     }
@@ -39,7 +38,7 @@ function primeiraLetraNomesMeio(value) {
 }
 
 for (const user of users) {
-    const arrStringUser = user.split(" ");
+    const arrStringUser = user.normalize("NFD").split(" ");
 
 // sobrenome //
 const sobrenome = retornaSobrenome(arrStringUser);
@@ -59,7 +58,7 @@ let usuario = `${sobrenome}.${primeiraLetraPrimeiroNome}${primeiraLetraNome}`.to
 let numero = 1;
 while (userslistArr.includes(usuario)) {
     usuario = usuario.replace(numero, "");
-    numero = numero;
+    numero = numero + 1;
     usuario = `${usuario}${numero}`;
     }
     userslistArr.push(usuario);
